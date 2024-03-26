@@ -1,0 +1,16 @@
+<div id="header">
+    <a class="title" routerLink="">BakeMyCake </a>
+    <div class="icons">
+        <a routerLink="" (click)="allowNavigation = true;">
+            <mat-icon matTooltip="Home">home</mat-icon>
+        </a>
+        <a style="margin-left: 10px;" matTooltip="{{ isLoggedIn ? 'Admin View' : 'Log In' }}" routerLink="{{ isLoggedIn ? 'admin' : 'login' }}" (click)="allowNavigation = true;" >
+            <mat-icon>{{isLoggedIn ? 'store': 'login'}}</mat-icon>
+        </a>
+        <a *ngIf="isLoggedIn" matTooltip="Log Out" style="margin-left: 10px;" (click)="logout()" routerLink="login" (click)="allowNavigation = true;" >
+            <mat-icon>{{isLoggedIn ? 'logout': 'login'}}</mat-icon>
+        </a>
+    </div>
+    
+    
+</div>

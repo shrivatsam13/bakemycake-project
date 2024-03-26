@@ -1,0 +1,98 @@
+<div class="mainDiv">
+  <div class="header">
+    <h2>Welcome Admin, <br> Please find below the placed orders till date.</h2>
+    <div class="search">
+      <mat-form-field>
+        <input matInput placeholder="Search Orders" type="text" name="Search" id="Search" [(ngModel)]="searchedText"
+          (keyup)="searchData()">
+        <button mat-icon-button matSuffix>
+          <mat-icon>search</mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
+  </div>
+
+  <!-- All Order Display Table -->
+  <div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource" matSort>
+      <!-- Order ID column -->
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> Order ID </th>
+        <td mat-cell *matCellDef="let order"> {{order.id}} </td>
+      </ng-container>
+
+      <!-- Order Price column -->
+      <ng-container matColumnDef="totalOrderPrice">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by orderPrice"> Order Price
+        </th>
+        <td mat-cell *matCellDef="let order">${{order.totalOrderPrice}}</td>
+      </ng-container>
+
+      <!-- Item Name column -->
+      <ng-container matColumnDef="itemName">
+        <th mat-header-cell *matHeaderCellDef> Item Name </th>
+        <td mat-cell *matCellDef="let order"> {{order.itemName}} </td>
+      </ng-container>
+
+      <!-- Item Price column -->
+      <ng-container matColumnDef="itemPrice">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by number"> Item Price </th>
+        <td mat-cell *matCellDef="let order">${{order.itemPrice}} </td>
+      </ng-container>
+
+      <!-- Item Quantity column -->
+      <ng-container matColumnDef="quantity">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by quantity"> Item Quantity
+        </th>
+        <td mat-cell *matCellDef="let order"> {{order.quantity}} </td>
+      </ng-container>
+
+      <!-- Item Category column -->
+      <ng-container matColumnDef="itemCategory">
+        <th mat-header-cell *matHeaderCellDef> Item Category </th>
+        <td mat-cell *matCellDef="let order"> {{order.itemCategory}} </td>
+      </ng-container>
+
+      <!-- Order Delivery Date column -->
+      <ng-container matColumnDef="deliveryDate">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by delivey date"> Delivery
+          Date </th>
+        <td mat-cell *matCellDef="let order"> {{order.deliveryDate | date:'MM/dd/yyyy'}} </td>
+      </ng-container>
+
+      <!-- Customer Name column -->
+      <ng-container matColumnDef="customerName">
+        <th mat-header-cell *matHeaderCellDef> Customer Name </th>
+        <td mat-cell *matCellDef="let order"> {{order.customerName}}<br>
+          <mat-icon *ngIf="order.totalOrderPrice >= 100 || order.quantity >= 5">grade</mat-icon>
+        </td>
+      </ng-container>
+
+      <!-- Customer Phone column -->
+      <ng-container matColumnDef="customerPhone">
+        <th mat-header-cell *matHeaderCellDef> Customer Phone </th>
+        <td mat-cell *matCellDef="let order"> {{order.customerPhone}} </td>
+      </ng-container>
+
+      <!-- Customer Email column -->
+      <ng-container matColumnDef="customerEmail">
+        <th mat-header-cell *matHeaderCellDef> Customer Email </th>
+        <td mat-cell *matCellDef="let order"> {{order.customerEmail}} </td>
+      </ng-container>
+
+      <!-- Customer Address column -->
+      <ng-container matColumnDef="customerAddress">
+        <th mat-header-cell *matHeaderCellDef> Customer Address </th>
+        <td mat-cell *matCellDef="let order"> {{order.customerAddress.street}}, {{order.customerAddress.city}},
+          {{order.customerAddress.state}} - {{order.customerAddress.zipCode}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+    <!-- Paginator for large number of entries -->
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons aria-label="Select page of periodic orders">
+    </mat-paginator>
+  </div>
+</div>

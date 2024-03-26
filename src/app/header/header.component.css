@@ -1,0 +1,20 @@
+#header{
+    display: flex;
+    justify-content: space-between;
+    width: 95vw;
+} 
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.title {
+    font-family: cursive;
+    margin-left: 42%;
+    font-size: xx-large;
+    letter-spacing: 2px;
+}
+
+mat-icon {
+    font-size: 28px;
+}

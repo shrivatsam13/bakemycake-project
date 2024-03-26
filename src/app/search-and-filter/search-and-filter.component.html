@@ -1,0 +1,23 @@
+<div class="container">
+
+    <div class="filter">
+        <label for="filter">Filter by category:</label>
+        <select name="filter"  id="filter" [(ngModel)]="selectedCategory" (change)="onFilter()">
+            <option value="All">All</option>
+            <option value="Brownies">Brownies</option>
+            <option value="Cake">Cake</option>
+            <option value="Cookies">Cookies</option>
+        </select>
+    </div>
+
+    <div class="search">
+        <mat-form-field style="padding-top: 0px;">
+            <input matInput placeholder="Search item" type="text" name="Search" id="Search" [(ngModel)]="searchText" (keyup)="onSearch()">
+            <button mat-icon-button matSuffix >
+                <mat-icon>search</mat-icon>
+            </button>
+        </mat-form-field>
+    </div>
+
+</div>
+  

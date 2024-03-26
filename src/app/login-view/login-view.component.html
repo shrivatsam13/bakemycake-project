@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="mat-elevation-z8">
+        <h3>If you are an Admin, enter your Admin Code</h3>
+        <p [hidden]="!checkFailed" style="color: red;">Invalid credentials</p>
+        <mat-form-field appearance="legacy">
+            <mat-label>Enter Admin Code</mat-label>
+            <input matInput type="{{ hidePassword ? 'password' : 'text' }}" [(ngModel)]="code" minlength="4" maxlength="4" name="adminCode" placeholder="Admin Code" #adminCode="ngModel">
+            <button mat-icon-button matSuffix (click)="togglePasswordVisibility()">
+                <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+            </button>
+        </mat-form-field>
+        <button mat-button color="primary" (click)="validateAdminCode()" [disabled]="code.length <4">Submit</button>
+        <h3>If you are a Customer, <a routerLink="">click here</a> to go to home page</h3>
+    </div>
+</div>

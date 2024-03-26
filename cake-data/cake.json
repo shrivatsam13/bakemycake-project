@@ -1,0 +1,148 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "name": "Berries Summer Cupcakes",
+            "path": "/assets/Berries Summer Cupcakes.jpg",
+            "category": "Cake",
+            "price": 10,
+            "rating": 4.0
+        },
+        {
+            "id": 2,
+            "name": "Brownies Different Flavor",
+            "path": "/assets/Brownies Different Flavor.jpg",
+            "category": "Brownies",
+            "price": 5,
+            "rating": 4.5
+        },
+        {
+            "id": 3,
+            "name": "Butter Cookies",
+            "path": "/assets/Butter Cookies.jpg",
+            "category": "Cookies",
+            "price": 15,
+            "rating": 4.1
+        },
+        {
+            "id": 4,
+            "name": "Cherry Jelly Cheesecake",
+            "path": "/assets/Cherry Jelly Cheesecake.jpg",
+            "category": "Cake",
+            "price": 30,
+            "rating": 4.5
+        },
+        {
+            "id": 5,
+            "name": "Chocolate Blueberries Cake",
+            "path": "/assets/Chocolate Blueberries Cake.jpg",
+            "category": "Cake",
+            "price": 30,
+            "rating": 4.0
+        },
+        {
+            "id": 6,
+            "name": "Chocolate Bonbons",
+            "path": "/assets/Chocolate Bonbons.jpg",
+            "category": "Cookies",
+            "price": 50,
+            "rating": 5.0
+        },
+        {
+            "id": 7,
+            "name": "Chocolate Cookies",
+            "path": "/assets/Chocolate Cookies.jpg",
+            "category": "Cookies",
+            "price": 15,
+            "rating": 4.7
+        },
+        {
+            "id": 8,
+            "name": "Chocolate Cupcake",
+            "path": "/assets/Chocolate Cupcake.jpg",
+            "category": "Cake",
+            "price": 10,
+            "rating": 4.3
+        },
+        {
+            "id": 9,
+            "name": "Chocolate Summer Berries",
+            "path": "/assets/Chocolate Summer Berries.jpg",
+            "category": "Cake",
+            "price": 20,
+            "rating": 4.2
+        },
+        {
+            "id": 10,
+            "name": "Classic Cheesecake",
+            "path": "/assets/Classic Cheesecake.jpg",
+            "category": "Cake",
+            "price": 60,
+            "rating": 5.0
+        },
+        {
+            "id": 11,
+            "name": "Cookies Cream Cake",
+            "path": "/assets/Cookies Cream Cake.jpg",
+            "category": "Cake",
+            "price": 20,
+            "rating": 4.4
+        },
+        {
+            "id": 12,
+            "name": "Easter Cupcakes",
+            "path": "/assets/Easter Cupcakes.jpg",
+            "category": "Cake",
+            "price": 10,
+            "rating": 3.8
+        },
+        {
+            "id": 13,
+            "name": "Fruit Cake",
+            "path": "/assets/Fruit Cake.jpg",
+            "category": "Cake",
+            "price": 50,
+            "rating": 3.9
+        },
+        {
+            "id": 14,
+            "name": "Isometric chocolate brownies",
+            "path": "/assets/Isometric chocolate brownies.jpg",
+            "category": "Brownies",
+            "price": 15,
+            "rating": 4.0
+        },
+        {
+            "id": 15,
+            "name": "Monster Theme Cake",
+            "path": "/assets/Monster Theme Cake.jpg",
+            "category": "Cake",
+            "price": 40,
+            "rating": 4.1
+        },
+        {
+            "id": 16,
+            "name": "Muffin Devil Horns",
+            "path": "/assets/Muffin Devil Horns.jpg",
+            "category": "Cake",
+            "price": 20,
+            "rating": 4.6
+        },
+        {
+            "id": 17,
+            "name": "Muffin Ghost",
+            "path": "/assets/Muffin Ghost.jpg",
+            "category": "Cake",
+            "price": 20,
+            "rating": 4.3
+        },
+        {
+            "id": 18,
+            "name": "Pumpkin Spice Cupcakes",
+            "path": "/assets/Pumpkin Spice Cupcakes.jpg",
+            "category": "Cake",
+            "price": 30,
+            "rating": 3.8
+        }
+    ]
+}

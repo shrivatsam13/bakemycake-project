@@ -1,0 +1,26 @@
+.container {
+    display: flex ;
+    justify-content: space-between;
+    padding: 30px;
+    padding-bottom: 0px;
+}
+
+.container div{
+    display: inline-block;
+}
+
+.filter, label{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+select {
+    margin-left: 10px;
+    width: 135px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium
+}
+
+

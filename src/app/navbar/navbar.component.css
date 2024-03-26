@@ -1,0 +1,23 @@
+button {
+    background-color: transparent;
+    border: 0;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+mat-toolbar {
+    background-color: #3f51b5;
+    color: aliceblue;
+}
+
+mat-icon {
+    color: #3f51b5;
+    padding-right: 5px;
+}
+
+

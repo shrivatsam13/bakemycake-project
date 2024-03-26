@@ -1,0 +1,136 @@
+.orderView {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+mat-card {
+    width: 350px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.mat {
+    box-shadow: 1px 1px 6px #b99b07;
+}
+
+.mat-elevation-z8 {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 55%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+}
+
+button {
+    border-radius: 20px;
+}
+
+.productDetails h2,
+.customerDetails h2 {
+    font-weight: bolder;
+    text-align: center;
+    color: #3f51b5;
+}
+
+.category mat-card-subtitle {
+    margin: 0px;
+}
+
+.category {
+    background-color: #3f51b5;
+    border-radius: 15px;
+    width: fit-content;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5px 10px;
+    align-items: center;
+}
+
+.price {
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #149e7d;
+}
+
+mat-card-title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+app-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.rating {
+    background-color: #3f51b5;
+    display: flex;
+    border-radius: 15px;
+    width: fit-content;
+    padding: 5px 10px;
+    align-items: center;
+}
+
+.rating img {
+    height: 15px;
+    width: 15px;
+    margin: 0px;
+}
+
+.rating mat-card-subtitle {
+    margin: 0px;
+    display: inline-block;
+    font-size: 15px;
+    padding-left: 2px;
+}
+
+.title {
+    background-color: #3f51b5;
+    color: aliceblue;
+    border-radius: 30px;
+    padding: 10px 40px;
+    width: fit-content;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+h2 {
+    margin: 0px;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 5px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.mat-form-field {
+    width: 100%;
+}
+
+.buttonDiv {
+    display: flex;
+    justify-content: center;
+}

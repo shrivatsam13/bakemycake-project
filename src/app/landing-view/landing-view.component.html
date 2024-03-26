@@ -1,0 +1,31 @@
+<div class="body">
+    <app-search-and-filter (search)="onSearch($event)" (filter)="onFilter($event)">
+    </app-search-and-filter>
+
+    <div style="display:flex">
+        <div style="text-align: center;">
+            <mat-card *ngFor="let item of filteredItems" class="mat">
+                <div class="card-header">
+                    <div class="category">
+                        <mat-card-subtitle style="color: aliceblue;">
+                            {{item.category}}
+                        </mat-card-subtitle>
+                    </div>
+                    <div class="rating">
+                        <img src="../../assets/rating.png">
+                        <mat-card-subtitle style="color: aliceblue;">
+                            {{item.rating}}
+                        </mat-card-subtitle>
+                    </div>
+                </div>
+                <img mat-card-image [src]="item.path">
+                <mat-card-content>
+                    <mat-card-title>{{item.name}}</mat-card-title>
+                    <mat-card-subtitle class="price">${{item.price}}</mat-card-subtitle>
+                    <button mat-button [routerLink]="['/orderView', item.name, item.price, item.path, item.category, item.rating]">Order Now</button>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

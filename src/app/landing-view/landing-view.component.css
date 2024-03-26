@@ -1,0 +1,86 @@
+.body{
+    margin-top: 4%;
+    min-height: 85vh
+}
+mat-card {
+    width: 260px;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 15px;
+}
+.mat {
+    box-shadow: 1px 1px 6px #899e14
+}
+
+mat-card img{
+    margin: 0;
+    height: 200px;
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;;
+}
+
+button {
+    background-color: #3f51b5;
+    border-radius: 20px;
+    color: aliceblue;
+}
+
+mat-card-title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #149e7d;
+}
+
+.category mat-card-subtitle {
+    margin: 0px;
+}
+
+.category {
+    background-color:  #899e14;
+    border-radius: 15px;
+    width: fit-content;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5px 10px;
+    align-items: center;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.rating {
+    background-color:  #899e14;
+    display: flex;
+    border-radius: 15px;
+    width: fit-content;
+    padding: 5px 10px;
+    align-items: center;
+}
+
+.rating img {
+    height: 15px;
+    width: 15px;
+    margin: 0px;
+}
+
+.rating mat-card-subtitle {
+    margin: 0px;
+    display: inline-block;
+    font-size: 15px;
+    padding-left: 2px;
+}
+
